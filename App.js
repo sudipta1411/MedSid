@@ -1,19 +1,6 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {AppRegistry} from 'react-native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
-  );
-}
+import {name as appName} from 'js/env';
+import setup from 'js/setup';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+AppRegistry.registerComponent(appName, setup);
